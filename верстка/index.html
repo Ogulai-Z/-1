@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header>
+        <div id="logo" onclick="slowScroll('#top')">
+            <span>itProger</span>
+        </div>
+        <div id="about">
+            <a href="#" title="Возможность" onclick="slowScroll('#main')">Возможность</a>
+            <a href="#" title="Преимущества" onclick="slowScrol('#overview')">Преимущества</a>
+            <a href="#" title="Контакты" onclick="slowScroll('#contacts')">Контакты</a>
+            <a href="#" title="Ответы на вопросы" onclick="slowScroll('#faq')">FAQ</a>
+        </div>
+    </header>
+     <div id="top">
+         <h1>Программирование</h1>
+         <h3>как способ жизни </h3>
+     </div>
+     <div id="main">
+         <div class="intro">
+             <h2>Наши услуги помогут вам </h2>
+             <span>Большой выбор всего что может пригодится </span>
+         </div>
+         <div class="main">
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto voluptates doloremque soluta temporibus in reprehenderit vitae deleniti quasi earum eos?</span>
+        </div>
+     </div>
+    <div id="overview">
+         <h2>Преимущества</h2>
+         <h4>С нами все проще</h4>
+     
+    
+         <div class="img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS7fNt-uV3IQzcRbfpbJsXrRJlJ2mGkAnnfnw&usqp=CAU" alt="">
+            <span>Изучение языка Ruby для начинающих</span>
+         </div>
+        <div class="img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS7fNt-uV3IQzcRbfpbJsXrRJlJ2mGkAnnfnw&usqp=CAU"alt="">
+            <span>Уроки  PhotoShop для начинающих</span>
+        </div>
+        
+    </div>
+
+    <div id="contacts">
+        <center><h5>Обратная связь</h5></center>
+        <form id="form_input">
+           <label for="name">Имя <span>*</span></label><br>
+           <input type="text" placeholder="Введите имя" name="name"id="name"><br>
+           <label for="email">Ваша почта <span>*</span></label><br>
+           <input type="email" placeholder="Введите email" name="email"id="email"><br>
+           <label for="message">Сообщение <span>*</span></label><br>
+           <textarea placeholder="введите ваше сообщение"  name="message"id="message"></textarea><br>
+            <div id="mess_send" class="btn">Отправить </div>
+        </form>
+    </div>
+
+    <div id="faq">
+        <div>
+            <span class="title">Оплата</span><br>
+            <span class="heading">Как будет проходить оплата </span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, quam! Quam ex nihil voluptas velit sit optio similique rem ipsam debitis quasi, temporibus, odit iure voluptatibus quaerat corrupti dicta a.</p>
+            <span class="heading">Как будет проходить оплата </span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, quam! Quam ex nihil voluptas velit sit optio similique rem ipsam debitis quasi, temporibus, odit iure voluptatibus quaerat corrupti dicta a.</p>
+            <span class="heading">Как будет проходить оплата </span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, quam! Quam ex nihil voluptas velit sit optio similique rem ipsam debitis quasi, temporibus, odit iure voluptatibus quaerat corrupti dicta a.</p>
+        </div>
+        <div>
+             <span class="title">Информация </span><br>
+             <span class="heading">Что входит в услуги сервиса</span>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptas ipsa nemo, repudiandae modi nostrum laboriosam odio expedita eum officia ut, aperiam itaque distinctio inventore reiciendis sequi vero obcaecati vel!</p>
+             <span class="heading">Что входит в услуги сервиса</span>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptas ipsa nemo, repudiandae modi nostrum laboriosam odio expedita eum officia ut, aperiam itaque distinctio inventore reiciendis sequi vero obcaecati vel!</p>
+             <span class="heading">Что входит в услуги сервиса</span>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptas ipsa nemo, repudiandae modi nostrum laboriosam odio expedita eum officia ut, aperiam itaque distinctio inventore reiciendis sequi vero obcaecati vel!</p>
+      
+        </div>
+        <div>
+            <span class="title">Гарантии </span><br>
+            <span class="heading">Какие гарантии есть</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptas ipsa nemo, repudiandae modi nostrum laboriosam odio expedita eum officia ut, aperiam itaque distinctio inventore reiciendis sequi vero obcaecati vel!</p>
+            <span class="heading">Какие гарантии есть</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptas ipsa nemo, repudiandae modi nostrum laboriosam odio expedita eum officia ut, aperiam itaque distinctio inventore reiciendis sequi vero obcaecati vel!</p>
+            <span class="heading">Какие гарантии есть</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptas ipsa nemo, repudiandae modi nostrum laboriosam odio expedita eum officia ut, aperiam itaque distinctio inventore reiciendis sequi vero obcaecati vel!</p>
+      
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    function slowScroll(id) {
+        $('html, body').animate({
+            scrollTop: $(id).offset().top
+        }, 500);
+    }
+
+    $(document).on('scroll', function () {
+        if($(document).scrollTop() === 0)
+        $('header').removeClass('fixed');
+        else 
+        $('header').after('class', 'fixed');
+    });
+</script>
+</body>
+</html>
